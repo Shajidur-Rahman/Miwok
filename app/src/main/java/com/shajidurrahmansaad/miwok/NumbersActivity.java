@@ -27,7 +27,7 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("six");
         words.add("seven");
 
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, R.layout.mylayout, words);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
