@@ -26,7 +26,7 @@ public class PhrasesActivity extends AppCompatActivity {
         phrasesWord.add(new Word("Shajidur ", "Rahman"));
 
 
-        phrases phrases1 = new phrases(this, phrasesWord);
+        wordAdapter phrases1 = new wordAdapter(this, phrasesWord);
 
         ListView listView = findViewById(R.id.phrasesList);
         listView.setAdapter(phrases1);

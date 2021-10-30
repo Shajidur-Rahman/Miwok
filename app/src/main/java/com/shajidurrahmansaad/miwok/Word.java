@@ -2,7 +2,7 @@ package com.shajidurrahmansaad.miwok;
 
 public class Word {
     private String english;
-
+    public static int ph;
     private String miwok;
 
     private int id;
@@ -11,11 +11,13 @@ public class Word {
         this.english = english;
         this.miwok = miwok;
         this.id = id;
+        ph = 0;
     }
 
     public Word(String english, String miwok) {
         this.english = english;
         this.miwok = miwok;
+        ph = 1;
     }
 
     public String getEnglish() {
