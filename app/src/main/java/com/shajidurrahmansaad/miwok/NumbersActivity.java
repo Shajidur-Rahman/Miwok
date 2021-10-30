@@ -17,21 +17,21 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
-        ArrayList<String> words = new ArrayList<>();
+        ArrayList<Word> words = new ArrayList<>();
 
-        words.add("One");
-        words.add("Two");
-        words.add("Three");
-        words.add("four");
-        words.add("five");
-        words.add("six");
-        words.add("seven");
+        words.add(new Word("One", "Miwok", R.drawable.ic_banner_foreground));
+        words.add(new Word("Two", "Miwok", R.drawable.ic_banner_foreground));
+        words.add(new Word("Three", "Miwok", R.drawable.ic_banner_foreground));
+        words.add(new Word("Four", "Miwok", R.drawable.ic_banner_foreground));
+        words.add(new Word("Five", "Miwok", R.drawable.ic_banner_foreground));
+        words.add(new Word("Six", "Miwok", R.drawable.ic_banner_foreground));
+        words.add(new Word("Seven", "Miwok", R.drawable.ic_banner_foreground));
+        words.add(new Word("Eight", "Miwok", R.drawable.ic_banner_foreground));
 
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, R.layout.mylayout, words);
-
+        wordAdapter wordAdapter = new wordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.list);
 
-        listView.setAdapter(itemsAdapter);
+        listView.setAdapter(wordAdapter);
 
     }
 }
