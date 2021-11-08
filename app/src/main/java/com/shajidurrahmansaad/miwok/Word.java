@@ -4,8 +4,15 @@ public class Word {
     private String english;
     public static int ph;
     private String miwok;
-
+    private int myAudio;
     private int id;
+
+    public Word(String english, String miwok, int myAudio, int id) {
+        this.english = english;
+        this.miwok = miwok;
+        this.myAudio = myAudio;
+        this.id = id;
+    }
 
     public Word(String english, String miwok, int id) {
         this.english = english;
@@ -42,5 +49,9 @@ public class Word {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getMyAudio() {
+        return myAudio;
     }
 }
